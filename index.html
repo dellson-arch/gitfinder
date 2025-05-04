@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Profile Finder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black min-h-screen flex items-center justify-center p-4">
+
+  <div class="w-full max-w-md bg-white/10 backdrop-blur-xl p-6 rounded-2xl shadow-2xl text-white ring-1 ring-white/10">
+    <h1 class="text-3xl font-bold mb-6 text-center tracking-wide text-white/90">🚀 GitHub Profile Finder</h1>
+
+    <div class="flex gap-2 mb-4">
+      <input type="text" placeholder="Enter GitHub username"
+        class="userNameinp flex-1 p-3 rounded-lg text-black bg-white/90 placeholder-gray-500 shadow focus:outline-none focus:ring-2 focus:ring-purple-500" />
+
+      <button class="search bg-purple-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-purple-700 hover:scale-105 transition duration-200">Search</button>
+    </div>
+
+    <div id="loading" class="hidden animate-pulse text-center text-white/70">⚙️ Fetching data...</div>
+    
+    <div class="card" class="mt-6 space-y-4 hidden"></div>
+
+    <div id="error" class="hidden text-red-400 text-center mt-4 font-semibold"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
